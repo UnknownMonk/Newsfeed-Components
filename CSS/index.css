@@ -68,6 +68,8 @@
   margin-top: 95px;
 }
 .article {
+  position: absolute;
+  left: -1800px;
   margin: 20px 10%;
   padding: 0 20px 25px;
   border: 1px solid lightgrey;

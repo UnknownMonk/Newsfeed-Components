@@ -13,13 +13,14 @@ class Article {
     // Set a click handler on the expandButton reference, calling the expandArticle method.
 
     this.expandButton.addEventListener('click', () => this.expandArticle());
+
+    TweenMax.to('.article', 2, { x: 1800 }, 0.5);
   }
 
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
     this.domElement.classList.toggle('article-open');
-
-    TweenMax.to('.expandButton', 2, { rotation: 360, x: 100 }, 0.5);
+    TweenMax.to('.article', 5, { x: -1800 }, 2);
   }
 }
 
