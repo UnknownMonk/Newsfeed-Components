@@ -18,6 +18,8 @@ class Article {
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
     this.domElement.classList.toggle('article-open');
+
+    TweenMax.to('.expandButton', 2, { rotation: 360, x: 100 }, 0.5);
   }
 }
 
